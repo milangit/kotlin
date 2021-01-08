@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MilanTest2</string>
+    <string name="hello_world">Hello</string>
+    <string name="press_me">Press me</string>
 </resources>
