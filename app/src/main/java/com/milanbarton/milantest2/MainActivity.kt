@@ -22,11 +22,16 @@ class MainActivity : AppCompatActivity() {
         val textViewText = textView.text.toString()
         val button = view as Button
         val buttonText = button.text.toString()
-        textView.text = "Hello World"
+        textView.text = resources.getString(R.string.hello_world)
         Log.d("MainActivity", textViewText)
+        Log.d("MainActivity", buttonText)
 
-        val test = com.milanbarton.milantest2.Song()
-        test.print_song()
+        //val test = Song()
+        //test.print_song()
 
+        val tetris = Tetris()
+        tetris.log_current_colors()
+        tetris.change_colors("Brown", "Pink", "Gray", "Black", "White", "Purple", "Gold")
+        tetris.log_current_colors()
     }
 }
