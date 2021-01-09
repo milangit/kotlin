@@ -29,9 +29,17 @@ class MainActivity : AppCompatActivity() {
         //val test = Song()
         //test.print_song()
 
-        val tetris = Tetris()
-        tetris.log_current_colors()
-        tetris.change_colors("Brown", "Pink", "Gray", "Black", "White", "Purple", "Gold")
-        tetris.log_current_colors()
+//        val tetris = Tetris()
+//        tetris.log_current_colors()
+//        tetris.change_colors("Brown", "Pink", "Gray", "Black", "White", "Purple", "Gold")
+//        tetris.log_current_colors()
+
+        //val controlFlow = ControlFlow()
+        //controlFlow.Test()
+
+        val fizzBuzz = FizzBuzz()
+        fizzBuzz.print_numbers()
+
+
     }
 }
