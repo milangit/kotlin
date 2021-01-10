@@ -6,10 +6,14 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import kotlin.math.min
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var textView: TextView
+    var playerPostion: Int = 0 //global variable
+    val maxPosition: Int = 10
+    val minPosition: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,9 +41,34 @@ class MainActivity : AppCompatActivity() {
         //val controlFlow = ControlFlow()
         //controlFlow.Test()
 
-        val fizzBuzz = FizzBuzz()
-        fizzBuzz.print_numbers()
+//        val fizzBuzz = FizzBuzz()
+//        fizzBuzz.print_numbers()
 
+        /*
+        val fce = Functions()
+        fce.test()
+        */
 
+        //move()
+        //val isValidMove = move(-3)
+
+        val songFce = SongFunctions()
+        Log.d("msg", songFce.GetName())
+        Log.d("msg", songFce.GetYearReleased().toString())
+        Log.d("msg", songFce.GetDurationInMinutes().toString())
+    }
+
+    fun move() {
+        playerPostion += 2
+    }
+
+    fun move(byAmount: Int): Boolean  {
+        if (playerPostion + byAmount > maxPosition || playerPostion + byAmount < minPosition) {
+            return false
+        }
+        else {
+            playerPostion += byAmount
+            return true
+        }
     }
 }
