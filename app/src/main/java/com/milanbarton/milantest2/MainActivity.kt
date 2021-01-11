@@ -98,17 +98,17 @@ class MainActivity : AppCompatActivity() {
         boeing.PrintValues()
     }
 
-    fun move() {
-        playerPostion += 2
-    }
-
-    fun move(byAmount: Int): Boolean  {
-        if (playerPostion + byAmount > maxPosition || playerPostion + byAmount < minPosition) {
-            return false
-        }
-        else {
-            playerPostion += byAmount
-            return true
-        }
-    }
+//    fun move() {
+//        playerPostion += 2
+//    }
+//
+//    fun move(byAmount: Int): Boolean  {
+//        if (playerPostion + byAmount > maxPosition || playerPostion + byAmount < minPosition) {
+//            return false
+//        }
+//        else {
+//            playerPostion += byAmount
+//            return true
+//        }
+//    }
 }
