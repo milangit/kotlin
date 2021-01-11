@@ -52,10 +52,50 @@ class MainActivity : AppCompatActivity() {
         //move()
         //val isValidMove = move(-3)
 
-        val songFce = SongFunctions()
-        Log.d("msg", songFce.GetName())
-        Log.d("msg", songFce.GetYearReleased().toString())
-        Log.d("msg", songFce.GetDurationInMinutes().toString())
+//        val songFce = SongFunctions()
+//        Log.d("msg", songFce.GetName())
+//        Log.d("msg", songFce.GetYearReleased().toString())
+//        Log.d("msg", songFce.GetDurationInMinutes().toString())
+
+//        val t_shirt = Clothing("t-shirt", 6)
+//        val isClean = t_shirt.isClean
+//        Log.d("msg", isClean.toString())
+//        t_shirt.washClothing()
+//        Log.d("msg", isClean.toString())
+//
+//        val sneakers: ShoesWithLaces = ShoesWithLaces("sneakers", 10)
+//        sneakers.laceShoes("checkered laces")
+//        sneakers.washClothing()
+
+        val bmw = Cars("BMW", "E39 M5", 2002, 1400f)
+        val skoda = Cars("Skoda", "Felicia", 1996, 1450f)
+        val fiat = Cars("Fiat", "Punto", 2006, 1200f)
+        val boeing = Planes("Boeing", "747-100", 2010, 162400f)
+
+        for (i in 1..101 step 1) {
+            bmw.Drive()
+            bmw.Stop()
+        }
+
+        for (i in 1..50 step 1) {
+            skoda.Drive()
+            skoda.Stop()
+        }
+
+        for (i in 1..70 step 1) {
+            fiat.Drive()
+            fiat.Stop()
+        }
+
+        for (i in 1..110 step 1) {
+            boeing.Flying()
+            boeing.Landing()
+        }
+
+        bmw.PrintValues()
+        skoda.PrintValues()
+        fiat.PrintValues()
+        boeing.PrintValues()
     }
 
     fun move() {
